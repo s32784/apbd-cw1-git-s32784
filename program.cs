@@ -4,8 +4,8 @@ class Program
 {
     static double CalculateAverage(int[] values)
     {
-        if (values == null  values.Length == 0)
-        return 0;
+        if (values == null || values.Length == 0)
+            return 0;
 
         int sum = 0;
         for (int i = 0; i < values.Length; i++)
@@ -19,8 +19,8 @@ class Program
 
     static int CalculateMax(int[] values)
     {
-        if (values == null  values.Length == 0)
-        return 0;
+        if (values == null || values.Length == 0)
+            return 0;
 
         int max = values[0];
 
@@ -34,7 +34,7 @@ class Program
 
         return max;
     }
-    
+
     static int CalculateMin(int[] values)
     {
         if (values == null || values.Length == 0)
@@ -55,12 +55,14 @@ class Program
 
     static void Main()
     {
-        int[] numbers = { 4, 13, 5, 30 };
+        int[] numbers = { 5, 10, 15, 20 };
 
         double avg = CalculateAverage(numbers);
         int max = CalculateMax(numbers);
+        int min = CalculateMin(numbers);
 
         Console.WriteLine("Average: " + avg);
         Console.WriteLine("Max: " + max);
+        Console.WriteLine("Min: " + min);
     }
 }
