@@ -19,7 +19,7 @@ class Program
 
     static void Main()
     {
-        int[] numbers = { 4, 13, 47, 30 };
+        int[] numbers = { 4, 13, 5, 30 };
         double avg = CalculateAverage(numbers);
         Console.WriteLine("Average: " + avg);
     }
