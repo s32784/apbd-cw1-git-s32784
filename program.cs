@@ -62,7 +62,7 @@ class Program
         int min = CalculateMin(numbers);
 
         Console.WriteLine("Average: " + avg);
-        Console.WriteLine("Max: " + max);
-        Console.WriteLine("Min: " + min);
+        Console.WriteLine("maxima: " + max);
+        Console.WriteLine("minima: " + min);
     }
 }
