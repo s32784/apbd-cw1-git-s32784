@@ -2,8 +2,18 @@ using System;
 
 class Program
 {
-    static void Main()
+    static double CalculateAverage(int[] values)
     {
-        Console.WriteLine("Have a good day!");
+        if (values == null || values.Length == 0)
+            return 0; 
+
+        int sum = 0;
+        for (int i = 0; i < values.Length; i++)
+        {
+            sum += values[i];
+        }
+
+        double average = (double)sum / values.Length;
+        return average;
     }
 }
