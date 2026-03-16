@@ -16,4 +16,11 @@ class Program
         double average = (double)sum / values.Length;
         return average;
     }
+
+    static void Main()
+    {
+        int[] numbers = { 4, 13, 47, 30 };
+        double avg = CalculateAverage(numbers);
+        Console.WriteLine("Average: " + avg);
+    }
 }
